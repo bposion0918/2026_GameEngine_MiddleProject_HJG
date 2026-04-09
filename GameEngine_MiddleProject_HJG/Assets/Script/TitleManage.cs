@@ -43,18 +43,9 @@ public class TitleManage : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if(OptionPanel == isActiveAndEnabled)
-            {
-                OptionPanel.SetActive(false);
-            }
-            else
-            {
-                OptionPanel.SetActive(true);
-            }
+            OptionPanel.SetActive(!OptionPanel.activeSelf);
         }
-
-
     }
 }
