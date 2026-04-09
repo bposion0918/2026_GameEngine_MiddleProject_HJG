@@ -35,4 +35,26 @@ public class TitleManage : MonoBehaviour
         OptionPanel.SetActive(false);
     }
 
+    public void QuitGame()
+    {
+        Debug.Log("게임 종료");
+        Application.Quit();
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(OptionPanel == isActiveAndEnabled)
+            {
+                OptionPanel.SetActive(false);
+            }
+            else
+            {
+                OptionPanel.SetActive(true);
+            }
+        }
+
+
+    }
 }
