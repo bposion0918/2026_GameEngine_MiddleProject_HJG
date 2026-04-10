@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: ae1b047f7fce3bb49979ba1814fd45ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5299053724000115599
+    second: TiltleButton_0
+  - first:
+      213: -8100061794215578006
+    second: TiltleButton_1
+  - first:
+      213: 309322179651469980
+    second: TiltleButton_2
+  - first:
+      213: -6792158579878442292
+    second: TiltleButton_3
+  - first:
+      213: 5146217334735558991
+    second: TiltleButton_4
+  - first:
+      213: 602382379881018373
+    second: TiltleButton_5
+  - first:
+      213: -6004436467948924455
+    second: TiltleButton_6
+  - first:
+      213: 3271647750973748748
+    second: TiltleButton_7
+  - first:
+      213: -6349462650910826361
+    second: TiltleButton_8
+  - first:
+      213: 5519675268686297088
+    second: TiltleButton_9
+  - first:
+      213: -1654120423686395458
+    second: TiltleButton_10
+  - first:
+      213: -2102904046302603524
+    second: TiltleButton_11
+  - first:
+      213: 9212885337045057848
+    second: TiltleButton_12
+  - first:
+      213: -2655455676589001833
+    second: TiltleButton_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TiltleButton_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 129
+        width: 132
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174234fa6baf576b0800000000000000
+      internalID: -5299053724000115599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 149
+        width: 52
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a663111d6bcc69f80800000000000000
+      internalID: -8100061794215578006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 159
+        width: 62
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92864f22eeea4400800000000000000
+      internalID: 309322179651469980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_3
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 139
+        width: 72
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca493c02c76db1a0800000000000000
+      internalID: -6792158579878442292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_4
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 219
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49dedd66690b6740800000000000000
+      internalID: 5146217334735558991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_5
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 139
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50433cb35971c5800800000000000000
+      internalID: 602382379881018373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 9
+        width: 192
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1d08368d4fbaca0800000000000000
+      internalID: -6004436467948924455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_7
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 9
+        width: 72
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06fefaab4a376d20800000000000000
+      internalID: 3271647750973748748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_8
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 9
+        width: 82
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 780a9d12c5d22e7a0800000000000000
+      internalID: -6349462650910826361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_9
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 9
+        width: 72
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0083e819963d99c40800000000000000
+      internalID: 5519675268686297088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_10
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 9
+        width: 82
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb924721d326b09e0800000000000000
+      internalID: -1654120423686395458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_11
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 9
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6d66b59ebf0d2e0800000000000000
+      internalID: -2102904046302603524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_12
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 29
+        width: 62
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831c9fee66ebadf70800000000000000
+      internalID: 9212885337045057848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TiltleButton_13
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 9
+        width: 72
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7933e10a12de52bd0800000000000000
+      internalID: -2655455676589001833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TiltleButton_0: -5299053724000115599
+      TiltleButton_1: -8100061794215578006
+      TiltleButton_10: -1654120423686395458
+      TiltleButton_11: -2102904046302603524
+      TiltleButton_12: 9212885337045057848
+      TiltleButton_13: -2655455676589001833
+      TiltleButton_2: 309322179651469980
+      TiltleButton_3: -6792158579878442292
+      TiltleButton_4: 5146217334735558991
+      TiltleButton_5: 602382379881018373
+      TiltleButton_6: -6004436467948924455
+      TiltleButton_7: 3271647750973748748
+      TiltleButton_8: -6349462650910826361
+      TiltleButton_9: 5519675268686297088
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
