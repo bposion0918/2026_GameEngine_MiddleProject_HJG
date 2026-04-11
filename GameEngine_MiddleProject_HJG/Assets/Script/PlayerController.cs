@@ -7,11 +7,14 @@ public class PlayerController : MonoBehaviour
     public float jumpforce = 5f;
     public Transform groundCheck;
     public LayerMask groundLayer;
+    public int maxJumpCount = 2;
 
     private Rigidbody2D rb;
     private bool isGrounded;
     private float moveInput;
     private Animator pAni;
+
+    private int currentJumpCount = 0;
 
     private void Awake()
     {
@@ -27,7 +30,12 @@ public class PlayerController : MonoBehaviour
         else if (moveInput < 0)
             transform.localScale = new Vector3(-1, 1, 1);
 
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.05f, groundLayer);
+
+        if (isGrounded && rb.linearVelocity.y <= 0.1f)
+        {
+            currentJumpCount = 0;
+        }
     }
 
     public void OnMove(InputValue value)
@@ -38,11 +46,13 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
-        if (value.isPressed && isGrounded)
+        if (value.isPressed && currentJumpCount < maxJumpCount)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpforce, ForceMode2D.Impulse);
             pAni.SetTrigger("Jump");
+
+            currentJumpCount++;
         }
     }
 }
