@@ -533,6 +533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFollowCam
   player: {fileID: 461585926}
+  verticalOffset: 0.1
 --- !u!1 &587684888
 GameObject:
   m_ObjectHideFlags: 0
@@ -48173,6 +48174,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1270324768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6180606789152456714, guid: e604797c64edb654c83b96c1741ebd09, type: 3}
+  m_PrefabInstance: {fileID: 6337501423632058429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1270324774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270324768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61dcdb3d830b76a49a6874702ee4276e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelObject
+  nextLevel: Level_2
 --- !u!1 &1975909140
 GameObject:
   m_ObjectHideFlags: 0
@@ -48916,12 +48935,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6180606789152456714, guid: e604797c64edb654c83b96c1741ebd09, type: 3}
       propertyPath: m_Name
-      value: 2_Stage
+      value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180606789152456714, guid: e604797c64edb654c83b96c1741ebd09, type: 3}
+      propertyPath: m_TagString
+      value: Finish
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6180606789152456714, guid: e604797c64edb654c83b96c1741ebd09, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1270324774}
   m_SourcePrefab: {fileID: 100100000, guid: e604797c64edb654c83b96c1741ebd09, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

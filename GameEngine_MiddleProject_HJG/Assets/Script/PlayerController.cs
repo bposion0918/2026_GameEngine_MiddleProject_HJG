@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     private float moveInput;
     private Animator pAni;
 
-    private int currentJumpCount = 0;
+    private int currentJumpCount = 0;  // 현재 점프를 한 횟수 추적
 
     private void Awake()
     {
@@ -24,15 +24,19 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
+        // 1. 이동 처리
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
+        // 2. 캐릭터 진행 방향에 따라 좌우 반전
         if (moveInput > 0)
             transform.localScale = new Vector3(1, 1, 1);
         else if (moveInput < 0)
             transform.localScale = new Vector3(-1, 1, 1);
 
+        // 3. 바닥 체크
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.05f, groundLayer);
 
+        // 4. 땅에 닿아있고, 캐릭터가 위로 솟구치는 상태가 아닐 때 점프 횟수 초기화
         if (isGrounded && rb.linearVelocity.y <= 0.1f)
         {
             currentJumpCount = 0;
@@ -47,13 +51,15 @@ public class PlayerController : MonoBehaviour
 
     public void OnJump(InputValue value)
     {
+        // 버튼이 눌렸고, 현재 점프 횟수가 최대 점프 횟수(2)보다 작을 때만 점프 실행
         if (value.isPressed && currentJumpCount < maxJumpCount)
         {
+            // 점프 전 y축 속도를 0으로 초기화 (떨어지는 중이거나 2단 점프 시 높이를 일정하게 보장)
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
             rb.AddForce(Vector2.up * jumpforce, ForceMode2D.Impulse);
             pAni.SetTrigger("Jump");
 
-            currentJumpCount++;
+            currentJumpCount++; // 점프 횟수 1 증가
         }
     }
 
@@ -63,8 +69,11 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-
-        SceneManager.LoadScene("Level_" + collision.name);
+        
+        if(collision.CompareTag("Finish"))
+        {
+            collision.GetComponent<LevelObject>().MoveToNextLevel();
+        }
     }
 
 }
