@@ -14,7 +14,7 @@ public class TitleManage : MonoBehaviour
 
     public void GameStart()
     {
-        SceneManager.LoadScene("PlayScene_Tutorial");
+        SceneManager.LoadScene("Level_1_Stage");
     }
 
     public void OpenGide()
