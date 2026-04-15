@@ -48337,7 +48337,7 @@ GameObject:
   - component: {fileID: 1988022549}
   - component: {fileID: 1988022548}
   m_Layer: 0
-  m_Name: 1_Stage
+  m_Name: Level_1
   m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
