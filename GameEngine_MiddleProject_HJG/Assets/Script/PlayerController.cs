@@ -79,7 +79,8 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.CompareTag("Respawn")) 
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            if (Invincible == false)
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         
         if (collision.CompareTag("Finish"))
