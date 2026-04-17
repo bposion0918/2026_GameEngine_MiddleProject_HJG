@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - Speed_Item
   - Invincible_Item
+  - Jump_Item
   layers:
   - Default
   - TransparentFX
@@ -43,8 +44,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Bakcground
+    uniqueID: 1622650183
+    locked: 0
   - name: Title
     uniqueID: 1688530615
+    locked: 0
+  - name: Foreground
+    uniqueID: 480544057
     locked: 0
   - name: Default
     uniqueID: 0

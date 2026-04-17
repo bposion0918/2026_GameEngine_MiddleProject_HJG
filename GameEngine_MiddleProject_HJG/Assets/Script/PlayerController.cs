@@ -99,13 +99,19 @@ public class PlayerController : MonoBehaviour
         if(collision.CompareTag("Invincible_Item"))
         {
             Invincible = true;
-            Invoke(nameof(ResetInvincible_Item), 5f);
+            Invoke(nameof(ResetInvincible_Item), 3f);
             Destroy(collision.gameObject);
         }
 
         if (collision.CompareTag("Speed_Item"))
         {
             moveSpeed *= 1.5f;
+            Invoke(nameof(Speed_Item), 3f);
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("Jump_Item"))
+        {
+            jumpforce *= 1.5f;
             Invoke(nameof(Speed_Item), 3f);
             Destroy(collision.gameObject);
         }
@@ -119,5 +125,10 @@ public class PlayerController : MonoBehaviour
         {
             moveSpeed = 2f;
         }
+        void Jump_Item()
+        {
+            jumpforce = 2f;
+        }
+
 }
 
