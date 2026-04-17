@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Jump_Item"))
         {
             jumpforce *= 1.5f;
-            Invoke(nameof(Speed_Item), 3f);
+            Invoke(nameof(Jump_Item), 5f);
             Destroy(collision.gameObject);
         }
 
