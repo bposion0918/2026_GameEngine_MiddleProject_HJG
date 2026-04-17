@@ -95,7 +95,7 @@ SpriteRenderer:
   m_Size: {x: 0.22, y: 0.23}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!114 &3358779553252629839
 MonoBehaviour:
@@ -115,6 +115,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  maxJumpCount: 2
 --- !u!114 &2334399912990758788
 MonoBehaviour:
   m_ObjectHideFlags: 0
