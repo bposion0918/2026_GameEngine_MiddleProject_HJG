@@ -264,7 +264,7 @@ GameObject:
   - component: {fileID: 71732858}
   - component: {fileID: 71732857}
   m_Layer: 5
-  m_Name: GIDE Button
+  m_Name: GUIDE Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -335,7 +335,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 828222456}
         m_TargetAssemblyTypeName: TitleManage, Assembly-CSharp
-        m_MethodName: OpenGide
+        m_MethodName: OpenGuide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -365,7 +365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8094819930646010102, guid: 85c5cfebc6b80724d80b306d237cdd78, type: 3}
+  m_Sprite: {fileID: 855067733875592807, guid: fc9a9e93a4a1cb54eaca42205a773e78, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -564,7 +564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c08798bc1554bfb46892f912e63903e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TitleMage
-  GidePanel: {fileID: 2110961404}
+  GuidePanel: {fileID: 2110961404}
   OptionPanel: {fileID: 382321219}
 --- !u!4 &828222457
 Transform:
@@ -1121,7 +1121,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1688530615
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -1392,7 +1392,7 @@ GameObject:
   - component: {fileID: 1729184217}
   - component: {fileID: 1729184216}
   m_Layer: 5
-  m_Name: GideEsc Butten
+  m_Name: GuideEsc Butten
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1463,7 +1463,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 828222456}
         m_TargetAssemblyTypeName: TitleManage, Assembly-CSharp
-        m_MethodName: CloseGide
+        m_MethodName: CloseGuide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1655,7 +1655,7 @@ GameObject:
   - component: {fileID: 2110961407}
   - component: {fileID: 2110961406}
   m_Layer: 5
-  m_Name: GidePanel
+  m_Name: GuidePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

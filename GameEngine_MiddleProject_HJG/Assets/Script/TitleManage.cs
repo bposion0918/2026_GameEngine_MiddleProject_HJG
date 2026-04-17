@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class TitleManage : MonoBehaviour
 {
-    public GameObject GidePanel;
+    public GameObject GuidePanel;
     public GameObject OptionPanel;
 
     public void ButtonLog()
@@ -17,13 +17,13 @@ public class TitleManage : MonoBehaviour
         SceneManager.LoadScene("Level_1");
     }
 
-    public void OpenGide()
+    public void OpenGuide()
     {
-        GidePanel.SetActive(true);
+        GuidePanel.SetActive(true);
     }
-    public void CloseGide()
+    public void CloseGuide()
     {
-        GidePanel.SetActive(false);
+        GuidePanel.SetActive(false);
     }
 
     public void OpenOption()
