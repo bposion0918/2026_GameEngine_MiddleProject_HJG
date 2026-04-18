@@ -10,6 +10,7 @@ TagManager:
   - Speed_Item
   - Invincible_Item
   - Jump_Item
+  - Giant_Item
   layers:
   - Default
   - TransparentFX

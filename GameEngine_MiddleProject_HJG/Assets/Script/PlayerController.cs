@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool Invincible = false;
+    private bool isGiant = false;
     private float moveInput;
     private Animator pAni;
 
@@ -29,13 +30,21 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
 
-        if(Invincible)
+        if (Invincible)
         {
             if (moveInput > 0)
                 transform.localScale = new Vector3(1, 1, 1);
             else if (moveInput < 0)
                 transform.localScale = new Vector3(-1, 1, 1);
         }
+        if (isGiant)
+        {
+            if (moveInput > 0)
+                transform.localScale = new Vector3(3, 3, 3);
+            else if (moveInput < 0)
+                transform.localScale = new Vector3(-3, 3, 3);
+        }
+
         else
         {
             // 2. 캐릭터 진행 방향에 따라 좌우 반전
@@ -45,15 +54,17 @@ public class PlayerController : MonoBehaviour
                 transform.localScale = new Vector3(-1, 1, 1);
         }
 
-        // 3. 바닥 체크
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.05f, groundLayer);
+            // 3. 바닥 체크
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.05f, groundLayer);
 
-        // 4. 땅에 닿아있고, 캐릭터가 위로 솟구치는 상태가 아닐 때 점프 횟수 초기화
-        if (isGrounded && rb.linearVelocity.y <= 0.1f)
-        {
-            currentJumpCount = 0;
+            // 4. 땅에 닿아있고, 캐릭터가 위로 솟구치는 상태가 아닐 때 점프 횟수 초기화
+            if (isGrounded && rb.linearVelocity.y <= 0.1f)
+            {
+                currentJumpCount = 0;
+            }
         }
-    }
+          
+    
 
     public void OnMove(InputValue value)
     {
@@ -90,8 +101,11 @@ public class PlayerController : MonoBehaviour
 
         if (collision.CompareTag("Enemy"))
         {
-            if(Invincible)
+            if(Invincible || isGiant)
+            {
                 Destroy(collision.gameObject);
+            }
+
             else
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -115,6 +129,12 @@ public class PlayerController : MonoBehaviour
             Invoke(nameof(Jump_Item), 5f);
             Destroy(collision.gameObject);
         }
+        if (collision.CompareTag("Giant_Item"))
+        {
+            isGiant = true;
+            Invoke(nameof(Giant_Item), 5f);
+            Destroy(collision.gameObject);
+        }
 
     }
         void ResetInvincible_Item()
@@ -128,6 +148,13 @@ public class PlayerController : MonoBehaviour
         void Jump_Item()
         {
             jumpforce = 2f;
+        }
+        void Giant_Item()
+        {
+           if (moveInput > 0)
+             transform.localScale = new Vector3(1, 1, 1);
+           else if (moveInput < 0)
+            transform.localScale = new Vector3(-1, 1, 1);
         }
 
 }
