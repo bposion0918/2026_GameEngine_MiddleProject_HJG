@@ -19,10 +19,13 @@ public class PlayerController : MonoBehaviour
 
     private int currentJumpCount = 0;  // 현재 점프를 한 횟수 추적
 
+    float score;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         pAni = GetComponent<Animator>();
+        score = 0f;
     }
     private void Update()
     {
@@ -96,6 +99,8 @@ public class PlayerController : MonoBehaviour
         
         if (collision.CompareTag("Finish"))
         {
+            HighScore.TrySet(SceneManager.GetActiveScene().buildIndex, (int)score);
+
             collision.GetComponent<LevelObject>().MoveToNextLevel();
         }
 
@@ -115,6 +120,7 @@ public class PlayerController : MonoBehaviour
             Invincible = true;
             Invoke(nameof(ResetInvincible_Item), 3f);
             Destroy(collision.gameObject);
+            score += 10f;
         }
 
         if (collision.CompareTag("Speed_Item"))
@@ -122,18 +128,21 @@ public class PlayerController : MonoBehaviour
             moveSpeed *= 1.5f;
             Invoke(nameof(Speed_Item), 3f);
             Destroy(collision.gameObject);
+            score += 10f;
         }
         if (collision.CompareTag("Jump_Item"))
         {
             jumpforce *= 1.5f;
             Invoke(nameof(Jump_Item), 5f);
             Destroy(collision.gameObject);
+            score += 10f;
         }
         if (collision.CompareTag("Giant_Item"))
         {
             isGiant = true;
             Invoke(nameof(Giant_Item), 5f);
             Destroy(collision.gameObject);
+            score += 10f;
         }
 
     }
