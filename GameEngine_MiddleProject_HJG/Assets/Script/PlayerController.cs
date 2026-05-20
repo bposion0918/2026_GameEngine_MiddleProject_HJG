@@ -118,6 +118,7 @@ public class PlayerController : MonoBehaviour
         if(collision.CompareTag("Invincible_Item"))
         {
             Invincible = true;
+            score += collision.GetComponent<ItemObject>().GetPoint();
             Invoke(nameof(ResetInvincible_Item), 3f);
             Destroy(collision.gameObject);
             score += 10f;
@@ -126,6 +127,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Speed_Item"))
         {
             moveSpeed *= 1.5f;
+            score += collision.GetComponent<ItemObject>().GetPoint();
             Invoke(nameof(Speed_Item), 3f);
             Destroy(collision.gameObject);
             score += 10f;
@@ -133,6 +135,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Jump_Item"))
         {
             jumpforce *= 1.5f;
+            score += collision.GetComponent<ItemObject>().GetPoint();
             Invoke(nameof(Jump_Item), 5f);
             Destroy(collision.gameObject);
             score += 10f;
@@ -140,6 +143,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Giant_Item"))
         {
             isGiant = true;
+            score += collision.GetComponent<ItemObject>().GetPoint();
             Invoke(nameof(Giant_Item), 5f);
             Destroy(collision.gameObject);
             score += 10f;
