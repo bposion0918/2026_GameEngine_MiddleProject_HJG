@@ -8,6 +8,7 @@ public class RankPage : MonoBehaviour
 
     [SerializeField] GameObject rowPrefab;
 
+
     StageResultList allData;
 
     private void Awake()
